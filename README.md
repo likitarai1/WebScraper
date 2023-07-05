@@ -5,9 +5,9 @@ Client side webpage
 <img width="960" alt="webscraper" src="https://github.com/likitarai1/WebScraper/assets/68556975/0bc66933-ca0a-47f3-ac0d-efd230d04e7e">
 
 - Tech stack used
-1) Frontend: ReactJS
-2) Backend: NodeJS
-3) Database: PostgreSQL
+  1) Frontend: ReactJS
+  2) Backend: NodeJS
+  3) Database: PostgreSQL
 
 - Information about routes:
 
