@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "ce067c41-449a-491b-b4a6-0a604fabbef3",
+		"name": "Web scraper",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all insights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/insights",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"insights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add insight",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\" : \"https://en.wikipedia.org/wiki/Computer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/insights/search",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"insights",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to fav",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/insights/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"insights",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete insight",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/insights/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"insights",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:9000"
+		}
+	]
+}
